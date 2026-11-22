@@ -1,0 +1,39 @@
+/* style.css — the page around the canvas: dark, quiet, out of the way.
+   The game itself is drawn on the canvas; this file only centres it. */
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #05060f;
+  color: #e8ecf5;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+.stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+}
+
+canvas {
+  width: min(1280px, 96vw);
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: 2px solid #d4a94e;
+  border-radius: 8px;
+  box-shadow: 0 0 60px rgba(212, 169, 78, 0.18), 0 18px 50px rgba(0, 0, 0, 0.6);
+  background: #0b1020;
+  cursor: crosshair;
+}
+
+.hint {
+  margin: 0;
+  font-size: 13px;
+  color: #9fb2d8;
+  text-align: center;
+}
